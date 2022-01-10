@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Question_os">
+
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquareroundb"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="문제 풀기 시작" />
+
+        <LinearLayout
+            android:id="@+id/linearlayout1"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/a1"
+            android:visibility="invisible"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:padding="20dp"
+                android:lineSpacingExtra="4dp"
+                android:background="@drawable/a2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumsquareroundb"
+                android:text="하이"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:padding="20dp"
+                android:id="@+id/radioGroup1"
+                android:orientation="vertical"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView1">
+
+                <RadioButton
+                    android:id="@+id/radio1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:text="1번"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/radio1_2"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="2번" />
+
+                <RadioButton
+                    android:id="@+id/radio1_3"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="3번" />
+
+                <RadioButton
+                    android:id="@+id/radio1_4"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="4번" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearlayout2"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/a1"
+            android:visibility="invisible"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView2"
+                android:padding="20dp"
+                android:background="@drawable/a2"
+                android:lineSpacingExtra="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumsquareroundb"
+                android:text="하이"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:padding="20dp"
+                android:id="@+id/radioGroup2"
+                android:paddingBottom="20dp"
+                android:orientation="vertical"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView1">
+
+                <RadioButton
+                    android:id="@+id/radio2_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:text="1번"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/radio2_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:text="2번"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/radio2_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:text="3번"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/radio2_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:text="4번"
+                    android:textSize="20sp" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearlayout3"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/a1"
+            android:visibility="invisible"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView3"
+                android:padding="20dp"
+                android:lineSpacingExtra="4dp"
+                android:background="@drawable/a2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumsquareroundb"
+                android:text="하이"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup3"
+                android:padding="20dp"
+                android:orientation="vertical"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView1">
+
+                <RadioButton
+                    android:id="@+id/radio3_1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="1번" />
+
+                <RadioButton
+                    android:id="@+id/radio3_2"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="2번" />
+
+                <RadioButton
+                    android:id="@+id/radio3_3"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="3번" />
+
+                <RadioButton
+                    android:id="@+id/radio3_4"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="4번" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearlayout4"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/a1"
+            android:visibility="invisible"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView4"
+                android:padding="20dp"
+                android:lineSpacingExtra="4dp"
+                android:background="@drawable/a2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumsquareroundb"
+                android:textSize="20sp"
+                android:text="하이"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup4"
+                android:padding="20dp"
+                android:orientation="vertical"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView1">
+
+                <RadioButton
+                    android:id="@+id/radio4_1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="1번" />
+
+                <RadioButton
+                    android:id="@+id/radio4_2"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="2번" />
+
+                <RadioButton
+                    android:id="@+id/radio4_3"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="3번" />
+
+                <RadioButton
+                    android:id="@+id/radio4_4"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="4번" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearlayout5"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/a1"
+            android:visibility="invisible"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView5"
+                android:padding="20dp"
+                android:lineSpacingExtra="4dp"
+                android:background="@drawable/a2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumsquareroundb"
+                android:textSize="20sp"
+                android:text="하이"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup5"
+                android:padding="20dp"
+                android:orientation="vertical"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView1">
+
+                <RadioButton
+                    android:id="@+id/radio5_1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="1번" />
+
+                <RadioButton
+                    android:id="@+id/radio5_2"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="2번" />
+
+                <RadioButton
+                    android:id="@+id/radio5_3"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="3번" />
+
+                <RadioButton
+                    android:id="@+id/radio5_4"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="4번" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearlayout6"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/a1"
+            android:visibility="invisible"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView6"
+                android:padding="20dp"
+                android:lineSpacingExtra="4dp"
+                android:background="@drawable/a2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumsquareroundb"
+                android:textSize="20sp"
+                android:text="하이"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup6"
+                android:padding="20dp"
+                android:orientation="vertical"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView1">
+
+                <RadioButton
+                    android:id="@+id/radio6_1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="1번" />
+
+                <RadioButton
+                    android:id="@+id/radio6_2"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="2번" />
+
+                <RadioButton
+                    android:id="@+id/radio6_3"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="3번" />
+
+                <RadioButton
+                    android:id="@+id/radio6_4"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="4번" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearlayout7"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/a1"
+            android:visibility="invisible"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView7"
+                android:padding="20dp"
+                android:lineSpacingExtra="4dp"
+                android:background="@drawable/a2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumsquareroundb"
+                android:textSize="20sp"
+                android:text="하이"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup7"
+                android:padding="20dp"
+                android:orientation="vertical"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView1">
+
+                <RadioButton
+                    android:id="@+id/radio7_1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="1번" />
+
+                <RadioButton
+                    android:id="@+id/radio7_2"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="2번" />
+
+                <RadioButton
+                    android:id="@+id/radio7_3"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="3번" />
+
+                <RadioButton
+                    android:id="@+id/radio7_4"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="4번" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearlayout8"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/a1"
+            android:visibility="invisible"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView8"
+                android:padding="20dp"
+                android:lineSpacingExtra="4dp"
+                android:background="@drawable/a2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumsquareroundb"
+                android:textSize="20sp"
+                android:text="하이"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup8"
+                android:padding="20dp"
+                android:orientation="vertical"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView1">
+
+                <RadioButton
+                    android:id="@+id/radio8_1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="1번" />
+
+                <RadioButton
+                    android:id="@+id/radio8_2"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="2번" />
+
+                <RadioButton
+                    android:id="@+id/radio8_3"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="3번" />
+
+                <RadioButton
+                    android:id="@+id/radio8_4"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="4번" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearlayout9"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/a1"
+            android:visibility="invisible"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView9"
+                android:padding="20dp"
+                android:lineSpacingExtra="4dp"
+                android:background="@drawable/a2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumsquareroundb"
+                android:textSize="20sp"
+                android:text="하이"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup9"
+                android:padding="20dp"
+                android:orientation="vertical"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView1">
+
+                <RadioButton
+                    android:id="@+id/radio9_1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="1번" />
+
+                <RadioButton
+                    android:id="@+id/radio9_2"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="2번" />
+
+                <RadioButton
+                    android:id="@+id/radio9_3"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="3번" />
+
+                <RadioButton
+                    android:id="@+id/radio9_4"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="4번" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearlayout10"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/a1"
+            android:visibility="invisible"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView10"
+                android:padding="20dp"
+                android:lineSpacingExtra="4dp"
+                android:background="@drawable/a2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumsquareroundb"
+                android:textSize="20sp"
+                android:text="하이"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup10"
+                android:padding="20dp"
+                android:orientation="vertical"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView1">
+
+                <RadioButton
+                    android:id="@+id/radio10_1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="1번" />
+
+                <RadioButton
+                    android:id="@+id/radio10_2"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="2번" />
+
+                <RadioButton
+                    android:id="@+id/radio10_3"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="3번" />
+
+                <RadioButton
+                    android:id="@+id/radio10_4"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:theme="@style/CustomRadioButton"
+                    android:textSize="20sp"
+                    android:text="4번" />
+            </RadioGroup>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="답안 제출"
+            android:fontFamily="@font/nanumsquareroundb"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:background="#B7A5EA"
+            android:backgroundTint="#B7A5EA"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+
+</ScrollView>
